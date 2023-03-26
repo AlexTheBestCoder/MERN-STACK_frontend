@@ -1,0 +1,169 @@
+.App {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+  height: 100vh;
+  background: url(../public/18991302-degrade-doux-abstrait-dans-des-couleurs-pastel-violet-et-rose-fond-degrade-element-decoratif-de-texture-degradee-floue-fond-d-ecran-vectoriel.jpg);
+  background-size: cover;
+  /* background: linear-gradient(pink, white); */
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+.text {
+  background-color: pink;
+  padding: 10px;
+  height: 13%;
+  box-shadow: 0px 2px 50px white;
+}
+.text h3 {
+  padding-top: 10px;
+  text-align: center;
+}
+.form-box {
+  display: flex;
+  height: 87%;
+  width: 100%;
+  /* border: 2px solid black; */
+}
+form {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.form-box--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* background:url(../public/personnage-dessin-anime-illustration-3d-jeune-homme-voyage-portant-sumbrero-tenant-flacon-glace-pour-pique-niquer-sourire_1150-52370.jpg); */
+  /* background-size: cover;
+  background-position: center; */
+  width: 50%;
+  height: auto;
+}
+
+.form-box--image img {
+
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.input {
+  /* font-weight: bold; */
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 20px;
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+.input input {
+  border: 2px solid gray;
+  border-radius: 5px ;
+  height: 25px;
+  /* width: 80%; */
+}
+button {
+  position: relative;
+  left: 30%;
+  border: 2px solid black;
+  box-shadow: 3px 4px 4px;
+  border-radius: 5px;
+  background-color: pink;
+  height: 50px;
+  width: 10rem;
+}
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .input input {
+    /* width: 20%; */
+  }
+  .input {
+    display: flex;
+  }
+  .text h3 {
+    text-align: start;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input input {
+    width: 17rem;
+  }
+  .text h3 {
+    /* display: none; */
+  }
+}
+@media screen and (max-width: 900px) {
+  .input input {
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .App {
+    height: auto;
+  }
+  .form-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .input input {
+    width: 17rem;
+  }
+
+}
+@media screen and (max-width: 500px ) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .App {
+    height: 130vh;
+    /* width: 50vh; */
+    background-size: cover;
+  }
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* padding-bottom: 20px; */
+  }
+  .form-box--image {
+    /* width: 50%; */
+  }
+  .form-box--image img {
+    
+    position: relative;
+    left: 50%;
+    bottom: 12vh;
+   height: 45vh; 
+   /* /* width: auto; */
+   width: 390px; 
+  }
+  .form-box form {
+    position: relative;
+    left: 10%;
+    bottom: 18vh;
+  }
+  .form-box button {
+    position: relative;
+    left: 80%;
+  }
+}
